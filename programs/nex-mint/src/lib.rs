@@ -10,7 +10,6 @@ declare_id!("7RbBhS3jiAeTBmWNwnXfVM2336k2hjxW2A7waT2Mw3Ph");
 pub mod nex_mint {
     use super::*;
 
-    // Mint new tokens to the destination account.
     pub fn mint_tokens(ctx: Context<MintTokens>, amount: u64) -> Result<()> {
         let cpi_accounts = MintTo {
             mint: ctx.accounts.mint.to_account_info(),
@@ -21,7 +20,6 @@ pub mod nex_mint {
         Ok(())
     }
 
-    // Transfer tokens from one account to another.
     pub fn transfer_tokens(ctx: Context<TransferTokens>, amount: u64) -> Result<()> {
         let cpi_accounts = Transfer {
             from: ctx.accounts.source.to_account_info(),
@@ -32,7 +30,6 @@ pub mod nex_mint {
         Ok(())
     }
 
-    // Burn tokens from an account.
     pub fn burn_tokens(ctx: Context<BurnTokens>, amount: u64) -> Result<()> {
         let cpi_accounts = Burn {
             mint: ctx.accounts.mint.to_account_info(),
