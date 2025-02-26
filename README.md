@@ -1,4 +1,3 @@
-![Screenshot from 2025-02-26 21-58-15](https://github.com/user-attachments/assets/8f74a925-e247-4bca-8c52-f6c80e394428)Nex Mint
 ========
 
 **Nex Mint** is a Solana program built with [Anchor](https://www.anchor-lang.com/) that demonstrates how to create and mint tokens using the SPL Token program. This project shows how to:
